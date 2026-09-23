@@ -23,7 +23,7 @@ with tab1:
 with tab2:
     metrics_path=ROOT/"reports/metrics.csv"
     if metrics_path.exists():
-        metrics=pd.read_csv(metrics_path); st.dataframe(metrics.style.format({c:"{:.3f}" for c in ["accuracy","precision","recall","f1","roc_auc"]}), use_container_width=True)
+        metrics=pd.read_csv(metrics_path); st.dataframe(metrics.style.format({c:"{:.3f}" for c in ["accuracy","precision","recall","f1","roc_auc"]}), width="stretch")
         st.caption("All models use the same stratified test set and a 0.50 decision threshold.")
         for img in ["roc_curves.png","confusion_matrices.png"]:
             if (ROOT/"reports"/img).exists(): st.image(str(ROOT/"reports"/img))
