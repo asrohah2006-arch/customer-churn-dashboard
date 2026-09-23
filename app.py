@@ -6,8 +6,11 @@ import streamlit as st
 ROOT = Path(__file__).resolve().parent
 st.set_page_config(page_title="Customer churn | ML + DL", page_icon="📊", layout="wide")
 st.markdown("""<style>
-.block-container{padding-top:2rem;max-width:1180px} h1,h2,h3{color:#251f21}.stMetric{background:#f4efec;padding:14px;border-radius:10px}
-[data-testid="stSidebar"]{background:#f4efec}.tag{display:inline-block;background:#dcebe7;color:#274e46;padding:5px 10px;border-radius:12px;margin-right:6px}
+.block-container{padding-top:2rem;max-width:1180px}
+[data-testid="stMetric"]{background:#1e2530;border:1px solid #334155;padding:14px 16px;border-radius:10px}
+[data-testid="stMetric"] [data-testid="stMetricLabel"], [data-testid="stMetric"] [data-testid="stMetricLabel"] *{color:#cbd5e1 !important}
+[data-testid="stMetric"] [data-testid="stMetricValue"], [data-testid="stMetric"] [data-testid="stMetricValue"] *{color:#ffffff !important}
+.tag{display:inline-block;background:#dcebe7;color:#274e46;padding:5px 10px;border-radius:12px;margin-right:6px}
 </style>""", unsafe_allow_html=True)
 st.title("Customer churn prediction")
 st.caption("A portfolio project comparing classical machine learning and deep learning on one fair test split.")
