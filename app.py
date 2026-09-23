@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
-st.set_page_config(page_title="Customer churn | ML + DL", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Frankie Churn Dashboard", page_icon="📊", layout="wide")
 st.markdown("""<style>
 .block-container{padding-top:2rem;max-width:1180px}
 [data-testid="stMetric"]{background:#1e2530;border:1px solid #334155;padding:14px 16px;border-radius:10px}
@@ -12,7 +12,7 @@ st.markdown("""<style>
 [data-testid="stMetric"] [data-testid="stMetricValue"], [data-testid="stMetric"] [data-testid="stMetricValue"] *{color:#ffffff !important}
 .tag{display:inline-block;background:#dcebe7;color:#274e46;padding:5px 10px;border-radius:12px;margin-right:6px}
 </style>""", unsafe_allow_html=True)
-st.title("Customer churn prediction")
+st.title("Frankie Churn Dashboard")
 st.caption("A portfolio project comparing classical machine learning and deep learning on one fair test split.")
 st.markdown('<span class="tag">Logistic Regression</span><span class="tag">Random Forest</span><span class="tag">Keras ANN</span>', unsafe_allow_html=True)
 
