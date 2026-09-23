@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+.pytest_cache/
+models/*
+!models/.gitkeep
+reports/metrics.csv
+reports/metrics.json
+reports/*.png
+reports/*.csv
+reports/*.json
+
+# Deployment artifacts
+!models/*.joblib
+!models/*.keras
+!reports/metrics.csv
+!reports/metrics.json
+!reports/permutation_importance.csv
+!reports/roc_curves.png
+!reports/confusion_matrices.png
+!reports/ann_history.csv
+!reports/split.json
+!reports/shap_importance.csv
+!reports/shap_status.txt
