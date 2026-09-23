@@ -95,7 +95,7 @@ if errorlevel 1 goto :pip_fail
 
 echo.
 echo Installing project packages (pre-built wheels only, no compiler needed)...
-python -m pip install --only-binary :all: -r requirements.txt
+python -m pip install --only-binary :all: -r requirements-train.txt
 if errorlevel 1 goto :req_fail
 
 echo.

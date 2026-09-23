@@ -60,7 +60,7 @@ python -m venv .venv
 # macOS/Linux:
 source .venv/bin/activate
 python -m pip install --upgrade pip setuptools wheel
-python -m pip install --only-binary :all: -r requirements.txt
+python -m pip install --only-binary :all: -r requirements-train.txt
 
 python src/eda.py
 python src/train.py --epochs 80
@@ -93,7 +93,8 @@ customer-churn-ml-dl/
 ├── app.py
 ├── README.md
 ├── RESUME_PROJECT.md
-├── requirements.txt
+├── requirements.txt        (dashboard only, used by Streamlit Cloud)
+├── requirements-train.txt  (full training stack)
 ├── data/raw/Telco-Customer-Churn.csv
 ├── models/
 ├── reports/

@@ -20,7 +20,7 @@ fi
 [ -x .venv/bin/python ] || "$PY" -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip setuptools wheel
-python -m pip install --only-binary :all: -r requirements.txt
+python -m pip install --only-binary :all: -r requirements-train.txt
 python src/eda.py
 python src/train.py --epochs 80
 streamlit run app.py
