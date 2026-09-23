@@ -21,3 +21,5 @@ reports/*.json
 !reports/split.json
 !reports/shap_importance.csv
 !reports/shap_status.txt
+!reports/eda_overview.png
+!reports/dashboard_preview.png
